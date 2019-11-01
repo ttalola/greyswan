@@ -944,6 +944,10 @@ section.lazy-placeholder:after {
 .cid-rGc3q8G5Pz .collapsed .navbar-collapse.show .navbar-nav .nav-item {
   clear: both;
 }
+.cid-rGc3q8G5Pz .collapsed .navbar-collapse.collapsing .navbar-nav .nav-item:last-child,
+.cid-rGc3q8G5Pz .collapsed .navbar-collapse.show .navbar-nav .nav-item:last-child {
+  margin-bottom: 1rem;
+}
 .cid-rGc3q8G5Pz .collapsed .navbar-collapse.collapsing .navbar-buttons,
 .cid-rGc3q8G5Pz .collapsed .navbar-collapse.show .navbar-buttons {
   text-align: center;
@@ -1045,6 +1049,10 @@ section.lazy-placeholder:after {
   .cid-rGc3q8G5Pz .navbar-collapse.show .navbar-nav .nav-item {
     clear: both;
   }
+  .cid-rGc3q8G5Pz .navbar-collapse.collapsing .navbar-nav .nav-item:last-child,
+  .cid-rGc3q8G5Pz .navbar-collapse.show .navbar-nav .nav-item:last-child {
+    margin-bottom: 1rem;
+  }
   .cid-rGc3q8G5Pz .navbar-collapse.collapsing .navbar-buttons,
   .cid-rGc3q8G5Pz .navbar-collapse.show .navbar-buttons {
     text-align: center;
@@ -1119,7 +1127,7 @@ section.lazy-placeholder:after {
 .cid-rGc55UEMAB P {
   color: #767676;
 }
-.cid-rGc5Q3MzWh {
+.cid-rGyOhAIIxg {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: #2e2e2e;
@@ -1359,6 +1367,10 @@ section.lazy-placeholder:after {
 .cid-rGc3q8G5Pz .collapsed .navbar-collapse.show .navbar-nav .nav-item {
   clear: both;
 }
+.cid-rGc3q8G5Pz .collapsed .navbar-collapse.collapsing .navbar-nav .nav-item:last-child,
+.cid-rGc3q8G5Pz .collapsed .navbar-collapse.show .navbar-nav .nav-item:last-child {
+  margin-bottom: 1rem;
+}
 .cid-rGc3q8G5Pz .collapsed .navbar-collapse.collapsing .navbar-buttons,
 .cid-rGc3q8G5Pz .collapsed .navbar-collapse.show .navbar-buttons {
   text-align: center;
@@ -1460,6 +1472,10 @@ section.lazy-placeholder:after {
   .cid-rGc3q8G5Pz .navbar-collapse.show .navbar-nav .nav-item {
     clear: both;
   }
+  .cid-rGc3q8G5Pz .navbar-collapse.collapsing .navbar-nav .nav-item:last-child,
+  .cid-rGc3q8G5Pz .navbar-collapse.show .navbar-nav .nav-item:last-child {
+    margin-bottom: 1rem;
+  }
   .cid-rGc3q8G5Pz .navbar-collapse.collapsing .navbar-buttons,
   .cid-rGc3q8G5Pz .navbar-collapse.show .navbar-buttons {
     text-align: center;
@@ -1523,11 +1539,6 @@ section.lazy-placeholder:after {
 .cid-rGc3q8G5Pz .dropdown-item:hover {
   color: #767676 !important;
 }
-.cid-rGc5Q3MzWh {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: #2e2e2e;
-}
 .cid-rGc7dlGxLX {
   background-image: url("../../../assets/images/glass-2000x1333.jpg");
 }
@@ -1562,4 +1573,9 @@ section.lazy-placeholder:after {
 }
 .cid-rGc6FW3ayz textarea.form-control {
   min-height: 188px;
+}
+.cid-rGyOhAIIxg {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #2e2e2e;
 }
