@@ -19,9 +19,33 @@
   <link rel="stylesheet" href="assets/tether/tether.min.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  
-  
-  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, body, .mbr-fonts-style { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important; }
+    h1, h2, h3, h4, .mbr-section-title, .navbar-caption { letter-spacing: -0.025em; }
+    .navbar { background: rgba(255,255,255,0.97) !important; backdrop-filter: blur(8px); }
+    .navbar-caption { font-weight: 700 !important; font-size: 1.15rem !important; letter-spacing: 0.08em !important; }
+    .nav-link { font-size: .85rem !important; font-weight: 500 !important; letter-spacing: 0.04em !important; }
+    .mbr-section-title.display-1 { font-size: clamp(2rem, 4.5vw, 3.6rem) !important; font-weight: 700 !important; line-height: 1.1 !important; }
+    .mbr-text.display-5 { font-size: 1rem !important; line-height: 1.75 !important; }
+    .cid-rGyOhAIIxg { padding: 1.5rem 0 !important; background: #111 !important; }
+    .cid-rGyOhAIIxg .mbr-text { font-size: .8rem !important; opacity: .5; color: #fff !important; }
+
+    /* Work cards */
+    .gs-work-section { background: #f6f6f6; padding: 5rem 0 6rem; }
+    .gs-work-section h2 { font-size: 1.8rem; font-weight: 700; letter-spacing: -0.025em; margin-bottom: 2.5rem; color: #111; }
+    .gs-card { background: #fff; border: 1px solid #e5e5e5; border-radius: 10px; padding: 1.6rem; height: 100%; display: flex; flex-direction: column; transition: box-shadow .18s, transform .18s; }
+    .gs-card:hover { box-shadow: 0 6px 24px rgba(0,0,0,.09); transform: translateY(-2px); }
+    .gs-card.featured { border-color: #111; border-width: 2px; }
+    .gs-card-role { font-size: .7rem; font-weight: 600; text-transform: uppercase; letter-spacing: .07em; color: #888; margin-bottom: .25rem; }
+    .gs-card-date { font-size: .75rem; color: #bbb; margin-bottom: .8rem; }
+    .gs-card-title { font-size: .97rem; font-weight: 600; color: #111; margin-bottom: .55rem; line-height: 1.35; }
+    .gs-card-desc { font-size: .84rem; color: #555; line-height: 1.65; margin-bottom: .75rem; flex: 1; }
+    .gs-card-tech { font-size: .75rem; color: #999; font-style: italic; }
+    .gs-card-badge { display: inline-block; font-size: .65rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; background: #111; color: #fff; border-radius: 4px; padding: .15rem .5rem; margin-bottom: .6rem; }
+  </style>
+
+
 </head>
 <body>
   <section class="menu cid-rGc3q8G5Pz" once="menu" id="menu2-9">
@@ -67,7 +91,7 @@
         <div class="media-container-row align-center mbr-white">
             <div class="col-12">
                 <p class="mbr-text mb-0 mbr-fonts-style display-7">
-                    © Copyright 2017 - 2019 Grey Swan Oy (2797163-2) - All Rights Reserved
+                    © 2026 Grey Swan Oy (2797163-2)
                 </p>
             </div>
         </div>
@@ -86,7 +110,7 @@
                 MY WORKS</h1>
             
             <p class="mbr-text pb-3 mbr-fonts-style display-5">
-               I have extensive experience, over 15 years, working as entrepreneur, CEO, board member and technical project manager/owner. Here's a list of some projects I have been involved with.</p>
+               I have extensive experience of over 20 years, working as entrepreneur, founder, CEO, board member and technical project manager/owner. Here's a list of some projects I have been involved with.</p>
             
         </div>
     </div>
@@ -98,151 +122,144 @@
     </div>
 </section>
 
-<section class="timeline2 cid-rQc4UC0fsk" id="timeline2-e">
+<section class="gs-work-section" id="work-cards">
+    <div class="container">
+        <h2>Projects &amp; work</h2>
+        <div class="row">
 
-    
+            <!-- Mestamaster — featured -->
+            <div class="col-md-6 mb-4">
+                <div class="gs-card featured">
+                    <span class="gs-card-badge">Current</span>
+                    <div class="gs-card-role">Co-founder &amp; CEO</div>
+                    <div class="gs-card-date">2020 – present</div>
+                    <div class="gs-card-title">Mestamaster Oy</div>
+                    <div class="gs-card-desc">Building SaaS takt planning and lean construction management software. From zero to production with paying customers across Finland.</div>
+                    <div class="gs-card-tech">Ruby on Rails, React, PostgreSQL, Redis, AWS</div>
+                </div>
+            </div>
 
-    
+            <!-- Lainaaja.fi / Vertaislaina -->
+            <div class="col-md-6 mb-4">
+                <div class="gs-card">
+                    <div class="gs-card-role">Product owner</div>
+                    <div class="gs-card-date">06/2010 – 12/2017</div>
+                    <div class="gs-card-title">Vertaislaina Oy – Lainaaja.fi</div>
+                    <div class="gs-card-desc">Built a peer-to-peer lending platform from scratch, managing remote and on-site teams. Led product and handled project manager responsibilities across multiple workstreams over seven years.</div>
+                    <div class="gs-card-tech">PHP, Symfony, MySQL, Linux, Agile, Jira</div>
+                </div>
+            </div>
 
-    <div class="container align-center">
-        <h2 class="mbr-section-title pb-3 mbr-fonts-style display-2">Projects completed</h2>
-        
+            <!-- Credit scoring -->
+            <div class="col-md-6 mb-4">
+                <div class="gs-card">
+                    <div class="gs-card-role">Design &amp; data analysis</div>
+                    <div class="gs-card-date">01/2011 – 07/2018</div>
+                    <div class="gs-card-title">Credit Scoring Models – Big Data Scoring / Vertaislaina</div>
+                    <div class="gs-card-desc">Designed and implemented credit scoring with decision trees; assisted in specifying and training ML models. Ongoing data gathering and source curation over seven years.</div>
+                    <div class="gs-card-tech">Excel, SAS, TensorFlow, SQL</div>
+                </div>
+            </div>
 
-        <div class="container timelines-container" mbri-timelines="">
-            <!--1-->
-            <div class="row timeline-element reverse separline">
-                <span class="iconsBackground">
-                    <span class="mbr-iconfont mbrib-download"></span>
-                </span>          
-                <div class="col-xs-12 col-md-6 align-left">
-                    <div class="timeline-text-content">
-                        <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">Sales/purchase ledger transfer automation – Tilitoimisto Aarnio</h4>
-                        <p class="mbr-timeline-text mbr-fonts-style display-7"><em><strong>Process modelling and project management&nbsp;</strong></em>09/19<br>Project for automating the transfer of sales/purchase ledgers to/from accounting software. Created virtual-API with RPA for transferring and verifying data. <br><em>Sikulix, Robotic Process Automation, Win10 server, Asteri, Avisor</em></p>
-                     </div>
+            <!-- RPA ledger automation -->
+            <div class="col-md-6 mb-4">
+                <div class="gs-card">
+                    <div class="gs-card-role">Process modelling &amp; project management</div>
+                    <div class="gs-card-date">09/2019</div>
+                    <div class="gs-card-title">Sales/Purchase Ledger Automation – Tilitoimisto Aarnio</div>
+                    <div class="gs-card-desc">Automated transfer of sales and purchase ledgers to accounting software by building a virtual API with RPA for transferring and verifying data.</div>
+                    <div class="gs-card-tech">Sikulix, RPA, Win10 server, Asteri, Avisor</div>
                 </div>
             </div>
-            <!--2-->
-            <div class="row timeline-element  separline">
-                <span class="iconsBackground">
-                    <span class="mbr-iconfont mbrib-bookmark"></span>
-                </span>
-                <div class="col-xs-12 col-md-6 align-left ">
-                    <div class="timeline-text-content">
-                        <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">Ocr-tool for data extraction</h4>
-                        <p class="mbr-timeline-text mbr-fonts-style display-7"><strong><em>Designer and developer&nbsp;</em></strong>08/19-<br>Built a proof-of-concept for return post handling; scanning and optical character recognition for reading customer id from sent invoices. Ongoing development on training machine learning algorithm to improve accuracy.<br><em>Linux, Python: OpenCV, Tesseract, CUTIE</em><br></p>
-                    </div>
+
+            <!-- OCR tool -->
+            <div class="col-md-6 mb-4">
+                <div class="gs-card">
+                    <div class="gs-card-role">Designer &amp; developer</div>
+                    <div class="gs-card-date">2019 –</div>
+                    <div class="gs-card-title">OCR Return-Post Handler</div>
+                    <div class="gs-card-desc">Proof-of-concept for scanning invoices and reading customer IDs with optical character recognition. Ongoing ML training to improve accuracy.</div>
+                    <div class="gs-card-tech">Python, OpenCV, Tesseract, CUTIE, Linux</div>
                 </div>
             </div>
-            <!--3-->
-            <div class="row timeline-element reverse separline">
-                <span class="iconsBackground">
-                    <span class="mbr-iconfont mbrib-bootstrap"></span>
-                </span>
-                <div class="col-xs-12 col-md-6 align-left">
-                    <div class="timeline-text-content">
-                        <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">Cryptocurrency-backed lending product – Tesseract Investment Oy</h4>      
-                        <p class="mbr-timeline-text mbr-fonts-style display-7"><strong><em>Software and business developer&nbsp;</em></strong>08-12/18<br>Helped built quick Minimum Viable Product for lending site and did business development for gauging user interest.<br><em>PHP, Nocode, Marketing</em></p>
-                    </div>
+
+            <!-- Crypto lending -->
+            <div class="col-md-6 mb-4">
+                <div class="gs-card">
+                    <div class="gs-card-role">Software &amp; business developer</div>
+                    <div class="gs-card-date">08 – 12/2018</div>
+                    <div class="gs-card-title">Crypto-Backed Lending MVP – Tesseract Investment Oy</div>
+                    <div class="gs-card-desc">Built a quick MVP for a cryptocurrency-backed lending site and did business development to gauge user interest.</div>
+                    <div class="gs-card-tech">PHP, NoCode, Marketing</div>
                 </div>
             </div>
-            <!--4-->
-            <div class="row timeline-element  separline">
-                <span class="iconsBackground">
-                    <span class="mbr-iconfont mbri-growing-chart"></span>
-                </span>
-                <div class="col-xs-12 col-md-6 align-left ">
-                    <div class="timeline-text-content">
-                        <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">Cryptocurrency arbitrage trading – Dynamoid</h4>
-                        <p class="mbr-timeline-text mbr-fonts-style display-7"><strong><em>Design &amp; specifications&nbsp;</em></strong>04/17-03/18<br>Designed the logic and flows for automatic trading algorithm exploiting Bitcoin price differences in different exchanges. Routing and execution algorithms. <em>Linux, PHP, Rest, Tesseract</em></p>
-                    </div>
+
+            <!-- Crypto arbitrage -->
+            <div class="col-md-6 mb-4">
+                <div class="gs-card">
+                    <div class="gs-card-role">Design &amp; specifications</div>
+                    <div class="gs-card-date">04/2017 – 03/2018</div>
+                    <div class="gs-card-title">Cryptocurrency Arbitrage Trading – Dynamoid</div>
+                    <div class="gs-card-desc">Designed the logic and routing algorithms for automatic trading exploiting Bitcoin price differences across exchanges.</div>
+                    <div class="gs-card-tech">Linux, PHP, REST</div>
                 </div>
             </div>
-            <!--5-->
-            <div class="row timeline-element reverse separline">
-                <span class="iconsBackground">
-                    <span class="mbr-iconfont mbrib-cash"></span>
-                </span>
-                <div class="col-xs-12 col-md-6 align-left">
-                    <div class="timeline-text-content">
-                        <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">Loan portfolio BI-reporting system – Front Finance Oy</h4>
-                        <p class="mbr-timeline-text mbr-fonts-style display-7"><strong>Business &amp; tech specifications, testing&nbsp;</strong>10/17-02/18<br>With Group CFO we helped develop real-time receivable portfolio report for accounting and regulatory compliance. Daily reports detailing loan valuation, past and future cashflows and expected payoff.<br><em>LAMP, SQL, Excel</em><br></p>
-                    </div>
+
+            <!-- BI reporting -->
+            <div class="col-md-6 mb-4">
+                <div class="gs-card">
+                    <div class="gs-card-role">Business &amp; tech specifications, testing</div>
+                    <div class="gs-card-date">10/2017 – 02/2018</div>
+                    <div class="gs-card-title">Loan Portfolio BI Reporting – Front Finance Oy</div>
+                    <div class="gs-card-desc">With Group CFO developed real-time receivable portfolio reports for accounting and regulatory compliance — daily loan valuation, cashflows, and expected payoffs.</div>
+                    <div class="gs-card-tech">LAMP, SQL, Excel</div>
                 </div>
             </div>
-            <!--6-->
-            <div class="row timeline-element separline">
-                <span class="iconsBackground">
-                    <span class="mbr-iconfont mbrib-rocket"></span>
-                </span>
-                <div class="col-xs-12 col-md-6 align-left ">
-                    <div class="timeline-text-content">
-                        <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">Product owner – Vertaislaina Oy</h4>
-                        <p class="mbr-timeline-text mbr-fonts-style display-7">06/10-12/17<br>Worked as the product owner of peer-to-peer lending platform Lainaaja.fi. Built the platform from scratch with remote and on-site teams. Also was handling project manager’s responsibilities on some projects.<br><em>Agile, Jira, Trello, Github, PHP, Symfony, MySQL, Linux, Wordpress</em><br></p>
-                    </div>
+
+            <!-- Credit info exchange -->
+            <div class="col-md-6 mb-4">
+                <div class="gs-card">
+                    <div class="gs-card-role">Project manager: specification &amp; DB design</div>
+                    <div class="gs-card-date">03 – 06/2018</div>
+                    <div class="gs-card-title">Credit Info Exchange – Asiakastieto / Vertaislaina</div>
+                    <div class="gs-card-desc">Consumer positive credit record system: push own customer records to the registry and query non-customer data.</div>
+                    <div class="gs-card-tech">SQL, REST, Jira, Agile</div>
                 </div>
             </div>
-            <!--7-->
-            <div class="row timeline-element reverse separline">
-                <span class="iconsBackground">
-                    <span class="mbr-iconfont mbrib-magic-stick"></span>
-                </span>
-                <div class="col-xs-12 col-md-6 align-left">
-                    <div class="timeline-text-content">
-                        <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">Credit Scoring Model Development – Big Data Scoring AS / Vertaislaina Oy</h4>
-                        <p class="mbr-timeline-text mbr-fonts-style display-7"><strong>Design and data analysis</strong>&nbsp;01/11-07/18<br>Ongoing work related to designing, implementing, improving and monitoring different credit scoring models. Designed and implemented scoring with decision trees and assisted in specifying and training machine learning models. Also continuous improvement on data gathering and source curation.<br><em>Excel, SAS, Tensorflow, SQL</em></p>
-                    </div>
+
+            <!-- Payment gateway -->
+            <div class="col-md-6 mb-4">
+                <div class="gs-card">
+                    <div class="gs-card-role">Project management &amp; specification</div>
+                    <div class="gs-card-date">03 – 06/2012</div>
+                    <div class="gs-card-title">Bank Payment Gateway – Tieto / Vertaislaina</div>
+                    <div class="gs-card-desc">Supervised and defined the integration of payment gateways to Tieto’s multibank infrastructure.</div>
+                    <div class="gs-card-tech">API, SOAP, MySQL</div>
                 </div>
             </div>
-            <!--8-->
-            <div class="row timeline-element separline">
-                <span class="iconsBackground">
-                    <span class="mbr-iconfont mbrib-key"></span>
-                </span>
-                <div class="col-xs-12 col-md-6 align-left ">
-                    <div class="timeline-text-content">
-                        <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">Bank payment gateway integration – Tieto Oy / Vertaislaina Oy</h4>
-                        <p class="mbr-timeline-text mbr-fonts-style display-7"><strong>Project management &amp; specification&nbsp;</strong>03-06/12<br>Supervised and defined the project of implementing payment gateways to Tieto multibank infrastructure.<br><em>API, SOAP, MySQL</em></p>
-                    </div>
+
+            <!-- Loan interest calc -->
+            <div class="col-md-6 mb-4">
+                <div class="gs-card">
+                    <div class="gs-card-role">Specification, design &amp; testing</div>
+                    <div class="gs-card-date">07 – 12/2011</div>
+                    <div class="gs-card-title">Loan Interest Calculation – Vertaislaina</div>
+                    <div class="gs-card-desc">Designed the annuity calculation model and implemented testing protocols to verify calculation accuracy.</div>
+                    <div class="gs-card-tech">Excel, SQL</div>
                 </div>
             </div>
-            <!--9-->
-            <div class="row timeline-element reverse separline">
-                <span class="iconsBackground">
-                    <span class="mbr-iconfont mbrib-database"></span>
-                </span>
-                <div class="col-xs-12 col-md-6 align-left">
-                    <div class="timeline-text-content">
-                        <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">Loan interest calculation – Vertaislaina Oy</h4>
-                        <p class="mbr-timeline-text mbr-fonts-style display-7"><strong>Specification, design &amp; testing&nbsp;</strong>07-12/11<br>Designed calculation model for loan annuity payments. Implemented testing protocols for correct calculation results matching.<br><em>Excel, SQL</em></p>
-                    </div>
+
+            <!-- Other projects -->
+            <div class="col-md-6 mb-4">
+                <div class="gs-card">
+                    <div class="gs-card-role">Project manager &amp; designer</div>
+                    <div class="gs-card-date">2010 – 2019</div>
+                    <div class="gs-card-title">Other Projects</div>
+                    <div class="gs-card-desc">Credit Scoring Data Integration · Payment Processor Integration · Marketplace Bidding Mechanism · Aftermarket Exchange · User Account UX &amp; Accounting · Investment Return Modelling · Content Design &amp; Management</div>
+                    <div class="gs-card-tech">Various</div>
                 </div>
             </div>
-            <!--10-->
-            <div class="row timeline-element separline">
-                <span class="iconsBackground">
-                    <span class="mbr-iconfont mbrib-print"></span>
-                </span>
-                <div class="col-xs-12 col-md-6 align-left ">
-                    <div class="timeline-text-content">
-                        <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">Credit Info Exchange – Asiakastieto Oy / Vertaislaina Oy</h4> 
-                        <p class="mbr-timeline-text mbr-fonts-style display-7"><strong>Project manager: specification and database design&nbsp;</strong>03-06/18<br>Consumer positive credit record system implementation, push records of own customers and request of non-customers’ data.<br><em>Github, SQL, Jira, Agile, Rest</em><br></p>
-                    </div>
-                </div>
-            </div>
-            <!--11-->
-            <div class="row timeline-element reverse">
-                <span class="iconsBackground">
-                    <span class="mbr-iconfont mbrib-like"></span>
-                </span>
-                <div class="col-xs-12 col-md-6 align-left">
-                    <div class="timeline-text-content">
-                        <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">Other projects completed as project manager and designer</h4>
-                        <p class="mbr-timeline-text mbr-fonts-style display-7">Credit Scoring Data Integration <br>Payment Processor Integration <br>Marketplace Bidding Mechanism <br>Aftermarket Exchange Implementation<br>User account UX &amp; Accounting <br>Investment Return Calculation Modelling <br>Content Design &amp; Management</p>
-                    </div>
-                </div>
-            </div>
-            <!--12-->
-            
+
         </div>
     </div>
 </section>
